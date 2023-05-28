@@ -4,7 +4,7 @@
 #define MAX 100
 
 char *encrypt(char string[], int shift) {
-  printf("\nThe encrypted the message is:\n");
+  printf("\nThe encrypted message is:\n");
   
   for (int i = 0; i < strlen(string); i++) {
     if (isalpha(string[i])) {
@@ -33,7 +33,7 @@ char *encrypt(char string[], int shift) {
 }
 
 char *decrypt(char string[], int shift) {
-  printf("\nThe decrypted the message is:\n");
+  printf("\nThe decrypted message is:\n");
   for (int i = 0; i < strlen(string); i++) {
     if (isalpha(string[i])) {
         if (islower(string[i]) && string[i] - shift >= 'a') {
